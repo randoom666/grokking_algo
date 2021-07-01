@@ -2,11 +2,11 @@ def crop(width: int, height: int):
     if width % height == 0:
         return height
     else:
-        crop(height, width % height)
+        return crop(height, width % height)
 
 
-width = input('Enter width')
-height = input('Enter height')
+width = int(input('Enter width: '))
+height = int(input('Enter height: '))
 if isinstance(width, float) or isinstance(height, float):
     print('You`re an asshole')
     width = int(width)
