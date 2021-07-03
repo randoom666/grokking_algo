@@ -9,6 +9,6 @@ def quick_sort(arr: list):
         return quick_sort(less) + [pivot] + quick_sort(greater)
 
 
-array = [random.randrange(0, 1000) for i in range(1000)]
+array = [random.randrange(0, 1000) for i in range(100)]
 print('Unsorted:', array, '\nLenght:', len(array))
 print('Sorted:', quick_sort(array))
